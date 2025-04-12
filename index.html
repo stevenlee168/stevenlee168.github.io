@@ -301,7 +301,7 @@
                 let laser_pch_par = document.getElementById("laser_pch_par").value;
                 let laser_prc_par = document.getElementById("laser_prc_par").value;
 
-                let processedText = uploadedText.replace(/PERS[\s\S]*/g, '!===============================================================');
+                let processedText = uploadedText.replace(/PERS.*/g, '!===============================================================');
 
                 // Check for 'MoveC' commands first and alert if found
                 if (uploadedText.includes('MoveC')) {
